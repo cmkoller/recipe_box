@@ -1,0 +1,21 @@
+<h1><%= @info[0]["name"] %></h1>
+
+
+<h3>Description:</h3>
+<p>
+  <%= @info[0]["description"] %>
+</p>
+
+<h3>Ingredients:</h3>
+<ul>
+  <% @ingredients.each do |item| %>
+    <li><%= item["name"] %></li>
+  <% end %>
+</ul>
+
+<h3>Instructions:</h3>
+<p>
+  <%= @info[0]["instructions"] %>
+</p>
+
+<a href="/"><-- Back to Recipes List</a>
